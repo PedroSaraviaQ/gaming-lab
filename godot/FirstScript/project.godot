@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="FirstScript"
-run/main_scene="res://FirstScript.tscn"
+run/main_scene="res://Signals.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
