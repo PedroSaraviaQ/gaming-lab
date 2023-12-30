@@ -38,3 +38,10 @@ func _process(delta):
 #? For this to work, we have commented out some lines of code.
 func _on_button_pressed():
 	set_process(not is_processing())
+
+func _ready():
+	var timer = get_node("Timer")
+	timer.timeout.connect(_on_timer_timeout)
+	
+func _on_timer_timeout():
+	visible = not visible
